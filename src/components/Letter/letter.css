@@ -1,0 +1,31 @@
+.letter {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid grey;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#correct {
+  background-color: #528d4e;
+}
+
+#almost {
+  background-color: #b49f39;
+}
+
+#error {
+  background-color: #3a393c;
+}
+
+/* -- SMALL DEVICES -- */
+@media screen and (max-width: 420px) {
+  .letter {
+    font-size: 1.5rem;
+  }
+}

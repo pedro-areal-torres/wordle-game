@@ -1,0 +1,27 @@
+.gameover__button {
+  height: 2rem;
+  font-size: 1.4rem;
+  background-color: white;
+  border: none;
+  color: #3a393c;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.gameover__button:hover {
+  font-size: 1.4rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: 500ms;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameover__congrats {
+  color: #528d4e;
+}

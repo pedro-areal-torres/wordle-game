@@ -1,0 +1,21 @@
+.author {
+  margin-top: 0.8rem;
+}
+
+.author__btn {
+  color: grey;
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.author__btn:hover {
+  transition: 500ms;
+  color: #121212;
+  background: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}

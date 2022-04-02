@@ -1,0 +1,34 @@
+nav {
+  height: 4rem;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 2.5rem;
+}
+
+nav a {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1rem;
+  background: transparent;
+  border: none;
+}
+
+.nav__logo {
+  width: 3rem;
+  height: 3rem;
+  filter: brightness(103%) contrast(100%);
+}
