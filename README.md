@@ -1,25 +1,27 @@
-CONTEXT API, USE STATE, ...
-
-
 ## Wordle Game
 This is the Wordle Game, built with [React](https://reactjs.org/), [ContextAPI](https://reactjs.org/docs/context.html), [ReactHooks](https://reactjs.org/docs/hooks-intro.html) and hosted on [Netlify](https://www.netlify.com/).
 
 Feel free to edit the code to make your own version and add features.
 
+### See the site live at:
+#### https://gorgeous-speculoos-305690.netlify.app/
+
+
 ### Rules
 Guess the WORDLE in six tries. Each guess must be a valid five-letter word. Hit the enter button to submit. After each guess, the color of the tiles will change to show how close your guess was to the word.
+
 ![Rule 1](https://i.imgur.com/UKTwJLK.png)
+
 The letter W is in the word and in the correct spot.
 
 ![Rule 2](https://i.imgur.com/8DMQsN7.png)
+
 The letter I is in the word but in the wrong spot.
 
 ![Rule 3](https://i.imgur.com/Br9khDg.png)
+
 The letter U is not in the word in any spot.
 
-
-### See the site live at:
-#### https://gorgeous-speculoos-305690.netlify.app/
 
 ## Build
 Since this project was built with React, the first thing you'll need is a Code Editor.
