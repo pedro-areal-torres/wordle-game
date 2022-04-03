@@ -35,9 +35,12 @@ function App() {
     for (let i = 0; i < 5; i++) {
       currWord += board[currAttempt.attempt][i];
     }
+
+    // If the word exists move to next attempt
     if (wordSet.has(currWord.toUpperCase())) {
       setCurrAttempt({ attempt: currAttempt.attempt + 1, letter: 0 });
     } else {
+      // If the word doesnt exist display an alert to the user
       Swal.fire({
         title: 'Word not found!',
         text: 'Please try again.',
@@ -50,11 +53,13 @@ function App() {
       });
     }
 
+    // If the word matches de correct word
     if (currWord.toUpperCase() === correctWord) {
       setGameOver({ gameOver: true, guessedWord: true });
       return;
     }
 
+    // If the user fails the last attempt the game is over
     if (currAttempt.attempt === 5) {
       setGameOver({ gameOver: true, guessedWord: false });
     }
