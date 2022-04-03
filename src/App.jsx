@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     generateWordSet().then((words) => {
       setWordSet(words.wordSet);
-      setCorrectWord('PEDRO');
+      setCorrectWord(words.todaysWord);
     });
   }, []);
 
