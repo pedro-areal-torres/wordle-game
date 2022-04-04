@@ -1,5 +1,8 @@
 .author {
   margin-top: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .author__btn {
@@ -9,6 +12,8 @@
   border: 1px solid grey;
   border-radius: 0.5rem;
   font-size: 0.9rem;
+  font-weight: bold;
+  height: 2rem;
 }
 
 .author__btn:hover {

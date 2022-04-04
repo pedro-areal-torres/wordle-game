@@ -53,7 +53,6 @@ function Keyboard() {
     };
   }, [handleKeyboard]);
 
-  console.log(disabledLetters);
   return (
     <div className="keyboard" onKeyDown={handleKeyboard}>
       <div className="keyboard__line1">
