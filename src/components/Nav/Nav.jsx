@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './nav.css';
-import PT from '../../assets/pt-logo.ico';
+import PT from '../../assets/pt-logo.png';
 
 function Nav() {
   return (
