@@ -12,7 +12,7 @@ function Author() {
         <button className="author__btn">GitHub Code</button>
       </a>
       <a
-        href="https://fancy-naiad-6fa5fa.netlify.app/"
+        href="http://www.pedro-areal-torres.me/"
         target="_blank"
         rel="noreferrer"
       >
