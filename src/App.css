@@ -1,3 +1,13 @@
+:root {
+  --color-correct: #528d4e;
+  --color-almost: #b49f39;
+  --color-error: #514f54;
+  --color-disabled: #3a393c;
+  --color-primary: #4db5ff;
+
+  --transition: all 700ms ease;
+}
+
 .App {
   text-align: center;
   background-color: #121212;
