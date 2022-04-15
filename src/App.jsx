@@ -107,7 +107,6 @@ function App() {
           {gameOver.gameOver ? <GameOver /> : <Keyboard />}
         </div>
       </AppContext.Provider>
-      <Author />
     </div>
   );
 }

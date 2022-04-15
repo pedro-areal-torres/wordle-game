@@ -10,25 +10,40 @@ nav {
 
 nav h1 {
   margin: 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: normal;
   color: white;
   font-size: 2.5rem;
 }
 
 nav a {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: normal;
   color: white;
   font-size: 1.5rem;
   position: absolute;
-  left: 1rem;
   background: transparent;
   border: none;
 }
 
-.nav__logo {
+.nav__logo-author {
   width: 2.5rem;
   height: 2rem;
-  filter: brightness(103%) contrast(100%);
+  left: 1rem;
+}
+
+.nav__logo-github {
+  right: 1rem;
+  filter: invert(96%) sepia(37%) saturate(2%) hue-rotate(267deg)
+    brightness(103%) contrast(101%);
+}
+
+img.logo__author {
+  width: 2.8rem;
+  height: 2rem;
+}
+
+img.logo__github {
+  width: 2.3rem;
+  margin-top: 0.35rem;
 }

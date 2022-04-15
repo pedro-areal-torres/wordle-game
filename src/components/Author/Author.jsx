@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './author.css';
 
 function Author() {
@@ -16,7 +17,7 @@ function Author() {
         target="_blank"
         rel="noreferrer"
       >
-        <button className="author__btn">Contact the author</button>
+        <button className="author__btn">Author's Profile</button>
       </a>
     </div>
   );
