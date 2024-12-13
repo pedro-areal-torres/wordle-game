@@ -5,35 +5,28 @@ import PT from '../../assets/pt-logo.png';
 
 import './nav.css';
 
-const NavLink = ({ href, imgSrc, imgAlt, className }) => (
-  <a href={href} target='_blank' rel='noreferrer' className={className}>
-    <img src={imgSrc} alt={imgAlt} className={`logo__${className}`} />
-  </a>
-);
-
-const Nav = () => {
-  const links = [
-    {
-      href: 'http://www.pedro-areal-torres.me/',
-      imgSrc: PT,
-      imgAlt: 'Author',
-      className: 'author',
-    },
-    {
-      href: 'https://github.com/pedro-areal-torres/Wordle-Game',
-      imgSrc: GITHUB,
-      imgAlt: 'GitHub',
-      className: 'github',
-    },
-  ];
-
+function Nav() {
   return (
     <nav>
-      <NavLink {...links[0]} />
+      <a
+        href="http://www.pedro-areal-torres.me/"
+        target="_blank"
+        rel="noreferrer"
+        className='nav__logo-author'
+      >
+        <img src={PT} alt="Author" className="logo__author" />
+      </a>
       <h1>Wordle</h1>
-      <NavLink {...links[1]} />
+      <a
+        href="https://github.com/pedro-areal-torres/Wordle-Game"
+        target="_blank"
+        rel="noreferrer"
+        className='nav__logo-github'
+      >
+        <img src={GITHUB} alt="Author" className="logo__github" />
+      </a>
     </nav>
   );
-};
+}
 
 export default Nav;
