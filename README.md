@@ -4,7 +4,7 @@ This is the Wordle Game, built with [React](https://reactjs.org/), [ContextAPI](
 Feel free to edit the code to make your own version and add features.
 
 ### See the site live at:
-#### https://gorgeous-speculoos-305690.netlify.app/
+#### https://wordle-game-daily.netlify.app/
 
 
 ### Rules
