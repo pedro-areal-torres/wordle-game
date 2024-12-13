@@ -6,7 +6,7 @@ import PT from '../../assets/pt-logo.png';
 import './nav.css';
 
 const NavLink = ({ href, imgSrc, imgAlt, className }) => (
-  <a href={href} target="_blank" rel="noreferrer" className={className}>
+  <a href={href} target='_blank' rel='noreferrer' className={className}>
     <img src={imgSrc} alt={imgAlt} className={`logo__${className}`} />
   </a>
 );

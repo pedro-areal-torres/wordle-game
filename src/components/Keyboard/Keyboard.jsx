@@ -28,7 +28,7 @@ const Keyboard = () => {
         onSelectLetter(key);
       }
     },
-    [gameOver, onEnter, onDelete, onSelectLetter, keyRows]
+    [gameOver, onEnter, onDelete, onSelectLetter, keyRows],
   );
 
   useEffect(() => {
@@ -39,7 +39,7 @@ const Keyboard = () => {
   }, [handleKeyboard]);
 
   return (
-    <div className="keyboard">
+    <div className='keyboard'>
       {keyRows.map((row, rowIndex) => (
         <div key={rowIndex} className={`keyboard__line${rowIndex + 1}`}>
           {row.map((key) => (

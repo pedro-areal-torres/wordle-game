@@ -10,13 +10,7 @@ const Letter = ({ letterPos, attemptVal }) => {
   const letterState = useMemo(() => {
     const isCorrect = correctWord.toUpperCase()[letterPos] === letter;
     const isAlmost = !isCorrect && letter !== '' && correctWord.toUpperCase().includes(letter);
-    return currAttempt.attempt > attemptVal
-      ? isCorrect
-        ? 'correct'
-        : isAlmost
-        ? 'almost'
-        : 'error'
-      : '';
+    return currAttempt.attempt > attemptVal ? (isCorrect ? 'correct' : isAlmost ? 'almost' : 'error') : '';
   }, [correctWord, letter, letterPos, attemptVal, currAttempt.attempt]);
 
   useEffect(() => {
@@ -25,7 +19,11 @@ const Letter = ({ letterPos, attemptVal }) => {
     }
   }, [letter, letterState, setDisabledLetters]);
 
-  return <div className="letter" id={letterState}>{letter}</div>;
+  return (
+    <div className='letter' id={letterState}>
+      {letter}
+    </div>
+  );
 };
 
 export default Letter;

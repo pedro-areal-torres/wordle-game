@@ -24,10 +24,7 @@ const Key = ({ keyVal, bigKey, disabled }) => {
   };
 
   return (
-    <div
-      className={`key ${bigKey ? 'big' : ''} ${disabled ? 'disabled' : ''}`}
-      onClick={selectLetter}
-    >
+    <div className={`key ${bigKey ? 'big' : ''} ${disabled ? 'disabled' : ''}`} onClick={selectLetter}>
       {keyVal === 'DELETE' ? <FiDelete /> : keyVal}
     </div>
   );

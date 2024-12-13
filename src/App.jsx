@@ -92,10 +92,10 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className='App'>
       <Nav />
       <AppContext.Provider value={contextValue}>
-        <div className="game">
+        <div className='game'>
           <Board />
           {gameOver.gameOver ? <GameOver /> : <Keyboard />}
         </div>

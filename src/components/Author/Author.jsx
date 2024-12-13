@@ -14,10 +14,10 @@ const Author = () => {
   ];
 
   return (
-    <div className="author">
+    <div className='author'>
       {links.map((link, index) => (
-        <a key={index} href={link.href} target="_blank" rel="noreferrer">
-          <button className="author__btn">{link.label}</button>
+        <a key={index} href={link.href} target='_blank' rel='noreferrer'>
+          <button className='author__btn'>{link.label}</button>
         </a>
       ))}
     </div>

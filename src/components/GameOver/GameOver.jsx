@@ -12,23 +12,17 @@ const GameOver = () => {
   };
 
   return (
-    <div className="gameOver">
+    <div className='gameOver'>
       {/* Display Game Over Message */}
       <h3 className={`gameover__message ${gameOver.guessedWord ? 'gameover__congrats' : 'gameover__lost'}`}>
-        {gameOver.guessedWord
-          ? 'Congratulations!'
-          : `Correct Word: ${correctWord}`}
+        {gameOver.guessedWord ? 'Congratulations!' : `Correct Word: ${correctWord}`}
       </h3>
 
       {/* Display Attempts if Guessed Correctly */}
-      {gameOver.guessedWord && (
-        <h3 className="gameover__attempts">
-          You guessed in {currAttempt.attempt} attempts
-        </h3>
-      )}
+      {gameOver.guessedWord && <h3 className='gameover__attempts'>You guessed in {currAttempt.attempt} attempts</h3>}
 
       {/* Play Again Button */}
-      <button className="gameover__button" onClick={refreshPage}>
+      <button className='gameover__button' onClick={refreshPage}>
         Play Again <IoMdRefresh />
       </button>
     </div>

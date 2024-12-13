@@ -7,9 +7,9 @@ const Board = () => {
   const COLUMNS = 5;
 
   return (
-    <div className="board">
+    <div className='board'>
       {Array.from({ length: ROWS }).map((_, rowIndex) => (
-        <div key={rowIndex} className="board__row">
+        <div key={rowIndex} className='board__row'>
           {Array.from({ length: COLUMNS }).map((_, colIndex) => (
             <Letter key={colIndex} letterPos={colIndex} attemptVal={rowIndex} />
           ))}
