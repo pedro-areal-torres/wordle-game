@@ -1,55 +1,22 @@
 import React from 'react';
-
 import './board.css';
 import Letter from '../Letter/Letter';
 
-function Board() {
+const Board = () => {
+  const ROWS = 6;
+  const COLUMNS = 5;
+
   return (
     <div className="board">
-      <div className="board__row">
-        <Letter letterPos={0} attemptVal={0} />
-        <Letter letterPos={1} attemptVal={0} />
-        <Letter letterPos={2} attemptVal={0} />
-        <Letter letterPos={3} attemptVal={0} />
-        <Letter letterPos={4} attemptVal={0} />
-      </div>
-      <div className="board__row">
-        <Letter letterPos={0} attemptVal={1} />
-        <Letter letterPos={1} attemptVal={1} />
-        <Letter letterPos={2} attemptVal={1} />
-        <Letter letterPos={3} attemptVal={1} />
-        <Letter letterPos={4} attemptVal={1} />
-      </div>
-      <div className="board__row">
-        <Letter letterPos={0} attemptVal={2} />
-        <Letter letterPos={1} attemptVal={2} />
-        <Letter letterPos={2} attemptVal={2} />
-        <Letter letterPos={3} attemptVal={2} />
-        <Letter letterPos={4} attemptVal={2} />
-      </div>
-      <div className="board__row">
-        <Letter letterPos={0} attemptVal={3} />
-        <Letter letterPos={1} attemptVal={3} />
-        <Letter letterPos={2} attemptVal={3} />
-        <Letter letterPos={3} attemptVal={3} />
-        <Letter letterPos={4} attemptVal={3} />
-      </div>
-      <div className="board__row">
-        <Letter letterPos={0} attemptVal={4} />
-        <Letter letterPos={1} attemptVal={4} />
-        <Letter letterPos={2} attemptVal={4} />
-        <Letter letterPos={3} attemptVal={4} />
-        <Letter letterPos={4} attemptVal={4} />
-      </div>
-      <div className="board__row">
-        <Letter letterPos={0} attemptVal={5} />
-        <Letter letterPos={1} attemptVal={5} />
-        <Letter letterPos={2} attemptVal={5} />
-        <Letter letterPos={3} attemptVal={5} />
-        <Letter letterPos={4} attemptVal={5} />
-      </div>
+      {Array.from({ length: ROWS }).map((_, rowIndex) => (
+        <div key={rowIndex} className="board__row">
+          {Array.from({ length: COLUMNS }).map((_, colIndex) => (
+            <Letter key={colIndex} letterPos={colIndex} attemptVal={rowIndex} />
+          ))}
+        </div>
+      ))}
     </div>
   );
-}
+};
 
 export default Board;

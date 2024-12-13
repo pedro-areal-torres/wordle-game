@@ -1,26 +1,27 @@
 import React from 'react';
-
 import './author.css';
 
-function Author() {
+const Author = () => {
+  const links = [
+    {
+      href: 'https://github.com/pedro-areal-torres/Wordle-Game',
+      label: 'GitHub Code',
+    },
+    {
+      href: 'http://www.pedro-areal-torres.me/',
+      label: "Author's Profile",
+    },
+  ];
+
   return (
     <div className="author">
-      <a
-        href="https://github.com/pedro-areal-torres/Wordle-Game"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <button className="author__btn">GitHub Code</button>
-      </a>
-      <a
-        href="http://www.pedro-areal-torres.me/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <button className="author__btn">Author's Profile</button>
-      </a>
+      {links.map((link, index) => (
+        <a key={index} href={link.href} target="_blank" rel="noreferrer">
+          <button className="author__btn">{link.label}</button>
+        </a>
+      ))}
     </div>
   );
-}
+};
 
 export default Author;

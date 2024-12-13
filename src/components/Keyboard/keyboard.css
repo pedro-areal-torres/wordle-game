@@ -26,6 +26,10 @@
   margin: 0.2rem;
 }
 
+.big {
+  width: 5rem;
+}
+
 /* -- TABLETS DEVICES -- */
 @media screen and (max-width: 600px) {
   .keyboard {
