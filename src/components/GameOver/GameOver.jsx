@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
-
-import './gameOver.css';
 import { IoMdRefresh } from 'react-icons/io';
 
+import './gameOver.css';
 import { AppContext } from '../../App';
 
-function GameOver() {
+const GameOver = () => {
   const { currAttempt, gameOver, correctWord } = useContext(AppContext);
 
   const refreshPage = () => {
@@ -13,33 +12,21 @@ function GameOver() {
   };
 
   return (
-    <div className="gameOver">
-      {gameOver.guessedWord ? (
-        <h3 className="gameover__congrats">Congratulations!</h3>
-      ) : (
-        <h3 className="gameover__lost">
-          Correct Word:
-          {' '}
-          {correctWord}
-        </h3>
-      )}
-      {gameOver.guessedWord && (
-        <h3>
-          You guessed in
-          {' '}
-          {currAttempt.attempt}
-          {' '}
-          attempts
-        </h3>
-      )}
+    <div className='gameOver'>
+      {/* Display Game Over Message */}
+      <h3 className={`gameover__message ${gameOver.guessedWord ? 'gameover__congrats' : 'gameover__lost'}`}>
+        {gameOver.guessedWord ? 'Congratulations!' : `Correct Word: ${correctWord}`}
+      </h3>
 
-      <button className="gameover__button" onClick={refreshPage}>
-        Play Again
-        {' '}
-        <IoMdRefresh />
+      {/* Display Attempts if Guessed Correctly */}
+      {gameOver.guessedWord && <h3 className='gameover__attempts'>You guessed in {currAttempt.attempt} attempts</h3>}
+
+      {/* Play Again Button */}
+      <button className='gameover__button' onClick={refreshPage}>
+        Play Again <IoMdRefresh />
       </button>
     </div>
   );
-}
+};
 
 export default GameOver;
